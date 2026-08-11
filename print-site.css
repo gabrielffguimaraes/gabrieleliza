@@ -1,0 +1,1055 @@
+/* ============================================================
+   Liza & Gabriel — Portfólio A4 para impressão
+   Layout pensado para: navegador = prévia das folhas A4
+   A4 = unidade de layout | PDF = resultado final | impressora = destino
+   ============================================================ */
+
+:root {
+  --ink: #152427;
+  --ink-2: #1c2f32;
+  --paper: #f5f0e6;
+  --paper-2: #ece4d3;
+  --clay: #b98a55;
+  --clay-deep: #96693a;
+  --text: #152427;
+  --muted: #5c6c69;
+  --muted-light: #a9bcb8;
+  --line-light: rgba(255, 255, 255, 0.16);
+  --line-dark: rgba(21, 36, 39, 0.16);
+  --serif: "Bodoni MT", Didot, Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --sheet: 210mm;
+  --sheet-h: 297mm;
+  --gutter: 17mm;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 10pt;
+  color: var(--text);
+  line-height: 1.55;
+  background: #d9d6ce;
+  padding: 22px 14px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============================================================
+   Folhas A4 (prévia no navegador)
+   ============================================================ */
+
+.page {
+  position: relative;
+  width: var(--sheet);
+  min-height: var(--sheet-h);
+  margin: 0 auto 26px;
+  background: #ffffff;
+  box-shadow: 0 3px 16px rgba(30, 30, 25, 0.22);
+  overflow: hidden;
+  break-before: page;
+  page-break-before: always;
+}
+
+.page:first-of-type {
+  break-before: auto;
+  page-break-before: auto;
+}
+
+.page-content {
+  padding: 15mm var(--gutter) 12mm;
+  min-height: 297mm;
+}
+
+/* fundos das páginas */
+.paper {
+  background: var(--paper);
+}
+
+.paper-deep {
+  background: var(--paper-2);
+}
+
+.ink {
+  background: var(--ink);
+  color: #f0ece1;
+}
+
+.page-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
+   Tipografia
+   ============================================================ */
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-bottom: 10mm;
+  display: flex;
+  align-items: center;
+  gap: 8mm;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: var(--clay);
+  display: inline-block;
+}
+
+.eyebrow-light {
+  color: var(--clay);
+}
+
+.display {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 24pt;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 14mm;
+}
+
+.display em,
+.display-light em {
+  font-style: italic;
+  color: var(--clay-deep);
+}
+
+.display-light {
+  color: #f0ece1;
+}
+
+.display-light em {
+  color: var(--clay);
+}
+
+.serif-italic {
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.section-head {
+  max-width: 150mm;
+}
+
+.muted-light {
+  color: var(--muted-light);
+}
+
+/* ============================================================
+   Página 1 — Capa
+   ============================================================ */
+
+.hero-band {
+  position: relative;
+  height: 130mm;
+  min-height: 130mm;
+  overflow: hidden;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 32%;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 31, 33, 0.66) 0%,
+    rgba(21, 36, 39, 0.12) 26%,
+    rgba(21, 36, 39, 0.4) 56%,
+    rgba(18, 31, 33, 0.9) 100%
+  );
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 13mm 17mm 14mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 44pt;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  margin-bottom: 6mm;
+}
+
+.hero-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15pt;
+  color: #e8c9a0;
+  margin-bottom: 6mm;
+}
+
+.hero-tag {
+  font-family: var(--sans);
+  font-size: 9.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e6ece9;
+  max-width: 95mm;
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  padding-left: 6mm;
+}
+
+.hero-loc {
+  position: absolute;
+  top: 12mm;
+  right: 17mm;
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #dfe7e3;
+  text-align: right;
+}
+
+/* ============================================================
+   Página 2 — Introdução
+   ============================================================ */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  gap: 14mm;
+  align-items: center;
+}
+
+.intro-copy p {
+  font-size: 10.5pt;
+  color: var(--muted);
+  margin-bottom: 7mm;
+  line-height: 1.6;
+}
+
+.intro-copy p:first-of-type {
+  color: var(--text);
+  font-size: 12pt;
+  line-height: 1.5;
+}
+
+.intro-figure {
+  width: 100%;
+  max-width: 74mm;
+  margin: 0 auto;
+}
+
+.intro-figure img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.frame-right,
+.frame-left {
+  position: relative;
+}
+
+.frame-right::after,
+.frame-left::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--clay);
+}
+
+.frame-right::after {
+  top: -14px;
+  right: -14px;
+}
+
+.frame-left::after {
+  top: -14px;
+  left: -14px;
+}
+
+.intro-quote {
+  margin: 10mm auto 0;
+  max-width: 150mm;
+  text-align: center;
+}
+
+.intro-quote::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 1px;
+  margin: 0 auto 8mm;
+  background: var(--clay);
+}
+
+.intro-quote p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16pt;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.intro-quote em {
+  color: var(--clay-deep);
+  font-style: normal;
+}
+
+/* Página 1 — Capa + Introdução (folha única) */
+.intro-lower {
+  min-height: 0;
+}
+
+.intro-lower .intro-grid {
+  gap: 12mm;
+  grid-template-columns: 4fr 5fr;
+  align-items: center;
+}
+
+.intro-lower .intro-left {
+  min-width: 0;
+}
+
+.intro-lower .intro-left .eyebrow {
+  margin-bottom: 7mm;
+}
+
+.intro-lower .intro-left h2 {
+  font-size: 18pt;
+  margin-bottom: 8mm;
+}
+
+.intro-lower .intro-copy p {
+  font-size: 9.5pt;
+  margin-bottom: 5mm;
+}
+
+.intro-lower .intro-copy p:first-of-type {
+  font-size: 10.5pt;
+}
+
+.intro-lower .intro-figure {
+  width: 100%;
+  max-width: 92mm;
+  height: 138mm;
+  margin: 0 0 0 auto;
+}
+
+.intro-lower .intro-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+
+/* ============================================================
+   Página 3 — Nossa Proposta
+   ============================================================ */
+
+.proposal-top {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 16mm;
+  align-items: start;
+  padding-bottom: 12mm;
+  border-bottom: 1px solid var(--line-light);
+  margin-bottom: 14mm;
+}
+
+.proposal-lead p.muted-light {
+  font-size: 10.5pt;
+  color: var(--muted-light);
+  line-height: 1.7;
+  max-width: 86mm;
+}
+
+.balance-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line-light);
+}
+
+.balance-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 5mm;
+  padding: 3.6mm 2mm 3.6mm 0;
+  border-bottom: 1px solid var(--line-light);
+  font-size: 10pt;
+  color: #eef0e9;
+}
+
+.balance-list .num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 9pt;
+  color: var(--clay);
+  min-width: 8mm;
+}
+
+.class-moments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10mm;
+  counter-reset: momento;
+}
+
+.moment {
+  position: relative;
+  counter-increment: momento;
+  padding: 8mm 7mm 9mm;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(233, 240, 241, 0.14);
+  border-top: 2px solid var(--clay);
+}
+
+.moment::before {
+  content: "0" counter(momento);
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22pt;
+  line-height: 1;
+  color: #e8c9a0;
+  margin-bottom: 5mm;
+}
+
+.moment h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 14pt;
+  color: #f4efe4;
+  margin-bottom: 4mm;
+}
+
+.moment p {
+  font-size: 9.5pt;
+  color: var(--muted-light);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   Página 4 — Como Ensinamos
+   ============================================================ */
+
+.steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10mm;
+  counter-reset: step;
+  position: relative;
+  margin-top: 22mm;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--line-dark);
+}
+
+.step {
+  position: relative;
+  padding-top: 24mm;
+}
+
+.step-num {
+  position: absolute;
+  top: 11mm;
+  left: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--clay-deep);
+}
+
+.step h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 15pt;
+  margin-bottom: 4mm;
+  color: var(--text);
+}
+
+.step p {
+  font-size: 9pt;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   Página 5 — Sobre Nós
+   ============================================================ */
+
+.about-block {
+  max-width: 150mm;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-block .eyebrow,
+.about-block .eyebrow::before {
+  justify-content: center;
+}
+
+.about-block .eyebrow {
+  display: flex;
+}
+
+.about-copy {
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 135mm;
+  margin: 0 auto 14mm;
+}
+
+.about-values {
+  font-family: var(--serif);
+  font-size: 14pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+}
+
+/* ============================================================
+   Páginas 6 e 7 — Perfis
+   ============================================================ */
+
+.profile-wrap {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-template-areas:
+    "hero hero"
+    "figure body";
+  gap: 7mm 12mm;
+}
+
+.profile-hero {
+  grid-area: hero;
+}
+
+.profile-role {
+  font-family: var(--sans);
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-top: -6mm;
+  margin-bottom: 3mm;
+}
+
+.ink .profile-role {
+  color: var(--clay);
+}
+
+.profile-figure {
+  grid-area: figure;
+  align-self: start;
+}
+
+.profile-figure img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.profile-body {
+  grid-area: body;
+}
+
+.profile-intro {
+  font-size: 10.5pt;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 7mm;
+}
+
+.profile-intro.muted-light {
+  color: #dfe7e3;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5mm;
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+  padding: 6mm 0;
+  margin-bottom: 7mm;
+}
+
+.ink .stats {
+  border-color: var(--line-light);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+  padding-right: 4mm;
+  border-right: 1px solid var(--line-dark);
+}
+
+.ink .stat {
+  border-right-color: var(--line-light);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-family: var(--serif);
+  font-size: 21pt;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.ink .stat-num {
+  color: #f0ece1;
+}
+
+.stat-label {
+  font-size: 6pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.ink .stat-label {
+  color: var(--muted-light);
+}
+
+.profile-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7mm;
+  margin-bottom: 7mm;
+}
+
+.col h3 {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
+}
+
+.ink .col h3 {
+  color: var(--clay);
+}
+
+.col ul {
+  list-style: none;
+}
+
+.col li {
+  font-size: 8pt;
+  line-height: 1.5;
+  color: var(--muted);
+  padding: 2mm 0;
+  border-bottom: 1px solid rgba(21, 36, 39, 0.08);
+}
+
+.ink .col li {
+  color: var(--muted-light);
+  border-bottom-color: var(--line-light);
+}
+
+.col li:last-child {
+  border-bottom: none;
+}
+
+.profile-focus {
+  font-size: 9pt;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 120mm;
+}
+
+.ink .profile-focus {
+  color: var(--muted-light);
+}
+
+.profile-focus strong {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--clay-deep);
+}
+
+.ink .profile-focus strong {
+  color: var(--clay);
+}
+
+/* ============================================================
+   Página 8 — No Palco
+   ============================================================ */
+
+.gallery {
+  margin-top: 6mm;
+}
+
+.gallery-feature {
+  width: 100%;
+  height: 100mm;
+  overflow: hidden;
+}
+
+.gallery-feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+.gallery-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7mm;
+  margin-top: 7mm;
+}
+
+.gallery-tall {
+  height: 82mm;
+  overflow: hidden;
+}
+
+.gallery-tall:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.gallery-tall:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 45%;
+}
+
+.gallery-credits {
+  font-size: 8.5pt;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-top: 8mm;
+  max-width: 130mm;
+}
+
+/* ============================================================
+   Página 9 — Contato
+   ============================================================ */
+
+.contact-block {
+  max-width: 150mm;
+  margin: 0 auto;
+  padding-top: 26mm;
+  text-align: center;
+}
+
+.contact-block .eyebrow,
+.contact-block .eyebrow::before {
+  justify-content: center;
+}
+
+.contact-block .eyebrow {
+  display: flex;
+}
+
+.contact-block h2 {
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12mm;
+  border-top: 1px solid var(--line-dark);
+  padding-top: 12mm;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.contact-label {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+}
+
+.contact-value {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.contact-value a {
+  border-bottom: 1px solid var(--clay);
+  padding-bottom: 1px;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 12mm 0 0;
+  border-top: 1px solid var(--line-light);
+  color: #f0ece1;
+}
+
+.footer-name {
+  font-family: var(--serif);
+  font-size: 16pt;
+  margin-bottom: 2mm;
+}
+
+.footer-note,
+.footer-meta {
+  font-size: 7pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}
+
+/* ============================================================
+   Impressão — Ctrl+P → Salvar como PDF
+   ============================================================ */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    height: 297mm;
+    margin: 0;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .page-content {
+    padding: 15mm 17mm 12mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ============================================================
+   Responsivo (telas menores) — não afeta a impressão
+   ============================================================ */
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 10px 0;
+  }
+
+  .page {
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 14px;
+  }
+
+  .page-content {
+    min-height: 0;
+    padding: 24px 20px;
+  }
+
+  .hero-band {
+    height: 60vh;
+    min-height: 320px;
+  }
+
+  .hero-loc {
+    right: 20px;
+    top: 16px;
+    text-align: right;
+  }
+
+  .intro-grid,
+  .proposal-top {
+    grid-template-columns: 1fr;
+  }
+
+  .proposal-lead {
+    margin-bottom: 8mm;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-top: 12mm;
+  }
+
+  .steps::before {
+    display: none;
+  }
+
+  .step {
+    padding-top: 14mm;
+  }
+
+  .class-moments {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .profile-wrap {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "figure"
+      "body";
+  }
+
+  .profile-figure {
+    max-width: 300px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat {
+    border-bottom: 1px solid var(--line-dark);
+    padding: 0 0 12px;
+  }
+
+  .ink .stat {
+    border-bottom-color: var(--line-light);
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+  }
+
+  .profile-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-feature {
+    height: 320px;
+  }
+
+  .gallery-tall {
+    height: 320px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-block {
+    padding-top: 10mm;
+  }
+
+  .footer {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero-title {
+    font-size: 40pt;
+  }
+
+  .hero-tag {
+    font-size: 8.5pt;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

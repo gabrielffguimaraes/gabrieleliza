@@ -1,0 +1,475 @@
+# EXISTING PORTFOLIO CONTENT — REDESIGN INSTRUCTIONS
+
+The content below is the existing content of my dance portfolio.
+
+You now have enough information to proceed with the redesign.
+
+**IMPORTANT:** This is existing content from my portfolio. Do not invent new information, experiences, awards, qualifications, testimonials or contact details.
+
+Your job is to **reorganize, simplify, improve and visually present this information**, not to create a completely different biography or replace the existing content.
+
+The objective is to make the website feel like a **high-end contemporary dance portfolio for 2026**, while preserving the identity, information and existing images from the current website/PDF.
+
+---
+
+# BRAND / IDENTITY
+
+**Gabriel & Liza**
+
+**Brazilian Zouk**
+
+Main positioning:
+
+> Transforming the first steps into a positive experience.
+
+Our teaching philosophy:
+
+We believe learning Zouk should be a positive experience from the very first class.
+
+Our proposal is to provide a welcoming environment for people who have never danced before, combining a clear methodology with accessible technical teaching.
+
+We want every student to finish class feeling that they learned something new, evolved compared to the beginning of the process and, above all, discovered the pleasure of dancing with a partner.
+
+---
+
+# CORE TEACHING PHILOSOPHY
+
+## Our Proposal
+
+Each class is planned to balance:
+
+* Welcoming environment
+* Learning
+* Technical development
+* Individual evolution
+* Confidence
+* Connection
+* Musicality
+
+At the beginning of the class, we create an environment where students feel comfortable meeting new people, activating their bodies and getting into the atmosphere of the class.
+
+During the main part of the class, we encourage concentration and teach the fundamentals of Brazilian Zouk in a clear, organized and progressive way, respecting each person's pace.
+
+At the end, we want students to recognize their own evolution, feel more confident in their bodies and leave wanting to return the following week.
+
+---
+
+# HOW WE TEACH
+
+## Learning with clarity. Dancing with confidence.
+
+Students can expect:
+
+* A respectful and welcoming environment from the first class.
+* Clear and objective explanations for beginners.
+* Positive feedback and individual attention.
+* Encouragement throughout the learning process.
+* Gradual evolution respecting individual and group pace.
+* Development of technique, connection and musicality.
+* The satisfaction of recognizing their own progress.
+* An opportunity to meet new people and become part of the Zouk community.
+
+---
+
+# OUR PHILOSOPHY
+
+We believe learning Zouk is a process built step by step.
+
+As teachers, we aim to explain the fundamentals in a simple and organized way, providing clear guidance and feedback so that each student can develop confidence in their own learning process.
+
+We value a classroom where people feel respected, supported and motivated to continue evolving, regardless of age or previous dance experience.
+
+---
+
+# ABOUT US
+
+Create a visually strong **"About Us"** section introducing Gabriel and Liza as a dance partnership.
+
+The section should communicate:
+
+**Technique • Patience • Respect • Connection**
+
+We seek to create classes where students can learn with concentration, receive encouragement throughout the process and leave every class feeling their own progress.
+
+Do not simply place all of this information into two large text blocks.
+
+Use a sophisticated editorial layout with photography and clearly separated information.
+
+---
+
+# GABRIEL
+
+## Gabriel Ferreira Guimarães
+
+**Professor • Dançarino • Parceiro de dança**
+
+Gabriel brings a trajectory built mainly through Brazilian Zouk and Ballroom Dance, combining practical experience, continuous study and interest in different dance languages.
+
+### Experience in Dance and Teaching
+
+* 5 years of Brazilian Zouk
+* 7 years of Ballroom Dance
+* 3 years studying with Renata Peçanha
+* 2 years studying with Rafael Oliveira & Izabel Ramos
+* Experience as an assistant Zouk teacher at Centro Cultural Sotaques
+* Experience as a personal dancer
+* Experience in choreographic performances
+
+### Training and References
+
+* Método Alex de Carvalho (MAC) — Teacher Training
+* Member of Time RAIZ, Rafael Oliveira & Izabel Ramos
+* Training in Urban Dance
+* Studies with Carlos de Oliveira, Jotta, Irla Carina, Rhawann & Ingrid, and Hudson Alexandre
+
+### Brazilian Zouk — Competitions and Performances
+
+* 2nd place — Combatchy, 2026
+* 3rd place — Combatchy, Aliança Zouk 2025
+* 1st place — Jack & Jill Novice, Aliança Zouk 2025
+* 2nd place — Jack & Jill, Zouk Hour 2025
+* Performance of "Álibi" at Aliança Zouk and Zouk in Rio 2025
+
+### Teaching Focus
+
+Developing technique, connection and musicality with attention to movement quality and clarity.
+
+---
+
+# LIZA
+
+## Liza Krylova
+
+**Professora • Bailarina • Educadora**
+
+Liza has an international background in dance and body education, combining experience in Brazilian Zouk, ballroom dance, ballet, Yoga and Pilates.
+
+### Experience in Dance and Teaching
+
+* 4 years of Brazilian Zouk
+* Brazilian Zouk teacher for 2 years
+* Ballroom dance and Latin dance teacher in the United States
+* Classical ballet teacher in the United States
+* Yoga and Pilates teacher in Spain and the United States
+* Experience with private and group classes
+* Experience teaching students with different backgrounds and levels
+
+### Training and References
+
+* Qualified through Método Alex de Carvalho (MAC)
+* Member of Time RAIZ, Rafael Oliveira & Izabel Ramos
+* Classical Ballet training — Vaganova method
+* Yoga teacher training — Yoga Alliance International
+* Brazilian Zouk workshops and classes at Rio Zouk Immersion and Centro Cultural Sotaques
+* "Álibi" performances at Aliança Zouk and Rio Zouk Congress
+* Awards in Jack & Jill and Combatchy
+
+### Teaching Focus
+
+Making technique clear and accessible while helping each student develop body awareness, confidence and pleasure in dancing.
+
+---
+
+# IMPORTANT CONTENT ORGANIZATION INSTRUCTIONS
+
+Do not display all of the information above as long paragraphs.
+
+Create a strong visual hierarchy.
+
+For example, the individual profiles could contain:
+
+1. Large portrait / dance photograph
+2. Name and role
+3. Short introduction
+4. Key experience statistics
+5. Experience
+6. Training and references
+7. Competitions / performances
+8. Teaching philosophy
+
+However, use your design judgment and create a more sophisticated composition if appropriate.
+
+Do not turn every piece of information into a generic card.
+
+Use editorial layouts, typography, whitespace, photography and visual rhythm.
+
+---
+
+# SUGGESTED WEBSITE STRUCTURE
+
+Use the existing content to create a coherent narrative.
+
+A possible structure is:
+
+### 01 — HERO
+
+Gabriel & Liza
+
+Brazilian Zouk
+
+A strong existing dance photograph.
+
+Short positioning statement:
+
+> Transformando os primeiros passos em uma experiência positiva.
+
+The hero should be visually powerful and contain very little text.
+
+---
+
+### 02 — INTRODUCTION
+
+A concise version of the core philosophy:
+
+Learning Zouk should be a positive experience from the very first class.
+
+Present the key concepts:
+
+**Technique • Connection • Musicality**
+
+Use photography and typography to create an editorial composition.
+
+---
+
+### 03 — OUR PROPOSAL
+
+Present the teaching methodology and what students can expect.
+
+Do not repeat the same information from the introduction.
+
+Consolidate redundant content intelligently.
+
+---
+
+### 04 — HOW WE TEACH
+
+Present the learning experience in a visually interesting way.
+
+Potential concepts:
+
+**Welcome → Learn → Practice → Evolve → Dance**
+
+Use the existing information to explain this process.
+
+---
+
+### 05 — ABOUT GABRIEL & LIZA
+
+Introduce them as individuals and as a dance partnership.
+
+This should feel personal and artistic rather than like a corporate "team" section.
+
+---
+
+### 06 — GABRIEL
+
+Create a strong visual profile using the existing photographs and information.
+
+Highlight important achievements without making the section feel like a résumé.
+
+Potential visual emphasis:
+
+**5 YEARS — Brazilian Zouk**
+
+**7 YEARS — Ballroom Dance**
+
+**2nd PLACE — Combatchy 2026**
+
+These numbers should only be highlighted if they genuinely improve the visual storytelling.
+
+---
+
+### 07 — LIZA
+
+Create a similarly strong visual profile.
+
+Potential highlights:
+
+**4 YEARS — Brazilian Zouk**
+
+**2 YEARS — Teaching Zouk**
+
+**International Dance & Body Education Experience**
+
+Again, use only the existing information.
+
+---
+
+### 08 — DANCE / PERFORMANCES
+
+If the existing website contains relevant photographs, use them to create a visually immersive portfolio/gallery section.
+
+Prioritize the existing photography.
+
+Do not replace the photographs with stock images.
+
+---
+
+### 09 — FINAL CALL TO ACTION
+
+Create a beautiful, simple final section:
+
+**Let's dance together.**
+
+Use the existing contact information.
+
+---
+
+# CONTACT INFORMATION
+
+Use the following contact information exactly:
+
+**Email**
+
+[zoukgabrielliza@gmail.com](mailto:zoukgabrielliza@gmail.com)
+
+**Phone**
+
+(21) 97638-6289
+
+(21) 99193-0868
+
+**Location**
+
+Rio de Janeiro – RJ
+
+**Instagram**
+
+gabrieleliza_dancers
+
+IMPORTANT:
+
+The original material contains an error where the email address appears under the Instagram section.
+
+The correct Instagram username is:
+
+**@gabrieleliza_dancers**
+
+Do not display the email address as the Instagram account.
+
+---
+
+# DESIGN DIRECTION
+
+Redesign the website according to contemporary 2026 portfolio design standards.
+
+The visual identity should feel:
+
+* Artistic
+* Elegant
+* Contemporary
+* Cinematic
+* Sophisticated
+* Emotional
+* Premium
+* Human
+* Authentic
+
+This is a **dance portfolio**, not a corporate website.
+
+Avoid generic SaaS layouts.
+
+Avoid making every section a collection of rounded cards.
+
+Avoid excessive gradients.
+
+Avoid excessive glassmorphism.
+
+Avoid excessive shadows.
+
+Avoid excessive animations.
+
+Avoid visual clutter.
+
+Use photography, typography, negative space, composition and movement as the primary design tools.
+
+---
+
+# EXISTING IMAGES
+
+The current website and PDF contain the portfolio photography.
+
+**KEEP THE EXISTING IMAGES.**
+
+Do not replace them with stock photography.
+
+Do not generate artificial replacement images.
+
+Use the existing images creatively through:
+
+* Full-screen hero sections
+* Editorial image compositions
+* Large portraits
+* Asymmetric layouts
+* Image grids
+* Overlapping images
+* Full-width sections
+* Image/text compositions
+* Performance galleries
+
+Crop images carefully and never distort them.
+
+Photography should be one of the main visual elements of the website.
+
+---
+
+# IMPORTANT: DO NOT REMOVE INFORMATION
+
+You may reorganize, consolidate and shorten repetitive wording.
+
+However, do not remove meaningful information simply because it makes the website longer.
+
+If information is redundant, combine it intelligently.
+
+For example, the sections "Nossa proposta", "Como ensinamos" and "Nossa filosofia" contain related ideas.
+
+Instead of displaying three repetitive blocks of text, transform them into a stronger storytelling experience while preserving their meaning.
+
+The same applies to the Gabriel and Liza profiles.
+
+---
+
+# DO NOT INVENT CONTENT
+
+Do not invent:
+
+* Awards
+* Competitions
+* Dance styles
+* Years of experience
+* Teachers
+* Companies
+* Events
+* Testimonials
+* Student reviews
+* Social media accounts
+* Contact information
+* Biography details
+
+Only use information provided above or already present in the existing website/PDF.
+
+---
+
+# FINAL DESIGN GOAL
+
+The final result should look like a professionally designed **contemporary Brazilian Zouk artist/teacher portfolio**, not like a generic website template.
+
+Someone visiting the website should immediately understand:
+
+**Who Gabriel and Liza are.**
+
+**What they teach.**
+
+**How they teach.**
+
+**What makes their approach different.**
+
+**What experience they have.**
+
+**How to contact them.**
+
+The website should make the existing content feel **clearer, more valuable, more elegant and much more visually impressive**, without changing the identity or inventing information.
+
+Before implementing the redesign, analyze the existing website and PDF carefully and preserve the strongest elements of the current design and photography.
+
+Then improve the information architecture, visual hierarchy, typography, spacing, responsiveness and overall presentation.

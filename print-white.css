@@ -1,0 +1,225 @@
+/* ============================================================
+   Variante institucional BRANCA — para o PDF "material-gabriel-liza.pdf"
+   Usada pelo gerador via _branco.html (style.css + este arquivo).
+   Mantém o mesmo layout A4, porém com fundos brancos e texto escuro.
+   ============================================================ */
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  .page,
+  .page-hero,
+  .paper,
+  .paper-deep,
+  .ink {
+    background: #ffffff !important;
+    color: #152427;
+  }
+
+  .eyebrow,
+  .eyebrow-light {
+    color: #96693a;
+  }
+
+  .display-light {
+    color: #152427;
+  }
+
+  .display-light em {
+    color: #96693a;
+  }
+
+  .muted-light {
+    color: #5c6c69;
+  }
+
+  /* ---- capa ---- */
+  .hero-shade {
+    display: none;
+  }
+
+  .hero-band {
+    background: #ffffff;
+    height: 130mm;
+    min-height: 130mm;
+  }
+
+  .hero-media {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 78mm;
+  }
+
+  .hero-media img {
+    height: 100%;
+    object-position: 50% 30%;
+  }
+
+  .hero-content {
+    position: relative;
+    min-height: 0;
+    padding: 80mm 17mm 0;
+    color: #152427;
+  }
+
+  .hero-title {
+    color: #152427;
+    font-size: 28pt;
+    margin-top: 2mm;
+  }
+
+  .hero-sub {
+    color: #96693a;
+  }
+
+  .hero-tag {
+    color: #5c6c69;
+    border-left-color: #96693a;
+  }
+
+  .hero-loc {
+    position: static;
+    margin-top: 12mm;
+    text-align: left;
+    color: #96693a;
+  }
+
+  /* ---- proposta ---- */
+  .proposal-top {
+    border-bottom-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .balance-list,
+  .balance-list li {
+    border-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .balance-list li {
+    color: #152427;
+  }
+
+  .balance-list .num {
+    color: #96693a;
+  }
+
+  .moment {
+    background: #f7f2e5;
+    border: 1px solid #d8cdb6;
+    border-top: 2px solid #96693a;
+  }
+
+  .moment::before {
+    color: #96693a;
+  }
+
+  .moment h3 {
+    color: #152427;
+  }
+
+  .moment p {
+    color: #5c6c69;
+  }
+
+  /* ---- como ensinamos ---- */
+  .steps::before {
+    background: rgba(21, 36, 39, 0.16);
+  }
+
+  .step-num {
+    color: #96693a;
+  }
+
+  .step p {
+    color: #5c6c69;
+  }
+
+  /* ---- introdução ---- */
+  .intro-quote p {
+    color: #152427;
+  }
+
+  .intro-quote em {
+    color: #96693a;
+  }
+
+  /* ---- perfis ---- */
+  .profile-role,
+  .ink .profile-role {
+    color: #96693a;
+  }
+
+  .profile-intro.muted-light {
+    color: #5c6c69;
+  }
+
+  .stats,
+  .ink .stats {
+    border-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .stat,
+  .ink .stat {
+    border-right-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .stat-num,
+  .ink .stat-num {
+    color: #152427;
+  }
+
+  .stat-label,
+  .ink .stat-label {
+    color: #5c6c69;
+  }
+
+  .col h3,
+  .ink .col h3 {
+    color: #96693a;
+  }
+
+  .col li,
+  .ink .col li {
+    color: #5c6c69;
+    border-bottom-color: rgba(21, 36, 39, 0.08);
+  }
+
+  .profile-focus,
+  .ink .profile-focus {
+    color: #5c6c69;
+  }
+
+  .profile-focus strong,
+  .ink .profile-focus strong {
+    color: #96693a;
+  }
+
+  /* ---- galeria ---- */
+  .gallery-credits {
+    color: #5c6c69;
+  }
+
+  /* ---- contato ---- */
+  .footer {
+    background: #ffffff !important;
+    color: #152427;
+    border-top-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .footer-name {
+    color: #152427;
+  }
+
+  .footer-note,
+  .footer-meta {
+    color: #5c6c69;
+  }
+}
