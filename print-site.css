@@ -856,6 +856,7 @@ a {
 
 .expect-block {
   margin-top: 10mm;
+  margin-bottom: 18mm;
   border-top: 1px solid var(--line-dark);
   padding-top: 8mm;
 }
