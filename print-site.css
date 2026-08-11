@@ -559,94 +559,6 @@ a {
 }
 
 /* ============================================================
-   Página 5 — Como Ensinamos
-   ============================================================ */
-
-.steps {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10mm;
-  counter-reset: step;
-  position: relative;
-  margin-top: 22mm;
-}
-
-.steps::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--line-dark);
-}
-
-.step {
-  position: relative;
-  padding-top: 24mm;
-}
-
-.step-num {
-  position: absolute;
-  top: 11mm;
-  left: 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 11pt;
-  color: var(--clay-deep);
-}
-
-.step h3 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 15pt;
-  margin-bottom: 4mm;
-  color: var(--text);
-}
-
-.step p {
-  font-size: 9pt;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-/* ============================================================
-   Página 6 — Sobre Nós
-   ============================================================ */
-
-.about-block {
-  max-width: 150mm;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-block .eyebrow,
-.about-block .eyebrow::before {
-  justify-content: center;
-}
-
-.about-block .eyebrow {
-  display: flex;
-}
-
-.about-copy {
-  font-size: 11pt;
-  line-height: 1.75;
-  color: var(--muted);
-  max-width: 135mm;
-  margin: 0 auto 14mm;
-}
-
-.about-values {
-  font-family: var(--serif);
-  font-size: 14pt;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--clay-deep);
-}
-
-/* ============================================================
    Páginas 6 e 7 — Perfis
    ============================================================ */
 
@@ -823,61 +735,6 @@ a {
 }
 
 /* ============================================================
-   Página 7 — No Palco
-   ============================================================ */
-
-.gallery {
-  margin-top: 6mm;
-}
-
-.gallery-feature {
-  width: 100%;
-  height: 100mm;
-  overflow: hidden;
-}
-
-.gallery-feature img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
-}
-
-.gallery-pair {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7mm;
-  margin-top: 7mm;
-}
-
-.gallery-tall {
-  height: 82mm;
-  overflow: hidden;
-}
-
-.gallery-tall:first-child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 30%;
-}
-
-.gallery-tall:last-child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 45%;
-}
-
-.gallery-credits {
-  font-size: 8.5pt;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-  margin-top: 8mm;
-  max-width: 130mm;
-}
-
-/* ============================================================
    Página 8 — Contato
    ============================================================ */
 
@@ -959,91 +816,81 @@ a {
 }
 
 /* ============================================================
-   Página 5 — Nosso Trabalho (resumo + contato)
+   Página 5 — Como é a aula + Contato
    ============================================================ */
 
-.summary-grid {
+.aula-phases {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10mm;
   margin-top: 4mm;
 }
 
-.summary-block {
-  display: flex;
-  flex-direction: column;
+.aula-phase {
+  border-top: 1px solid var(--line-dark);
+  padding-top: 6mm;
 }
 
-.summary-title {
+.aula-phase-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--clay-deep);
+  display: block;
+  margin-bottom: 2mm;
+}
+
+.aula-phase h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 15pt;
+  margin-bottom: 3mm;
+  color: var(--text);
+}
+
+.aula-phase p {
+  font-size: 9pt;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.expect-block {
+  margin-top: 10mm;
+  border-top: 1px solid var(--line-dark);
+  padding-top: 8mm;
+}
+
+.expect-title {
   font-family: var(--serif);
   font-weight: 400;
   font-size: 15pt;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
-}
-
-.summary-copy {
-  font-size: 9pt;
-  color: var(--muted);
-  line-height: 1.6;
   margin-bottom: 5mm;
 }
 
-.summary-steps {
+.expect-list {
   list-style: none;
-  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3mm 12mm;
 }
 
-.summary-steps li {
-  display: flex;
-  align-items: baseline;
-  gap: 6mm;
-  padding: 3mm 0;
-  border-top: 1px solid var(--line-dark);
-}
-
-.summary-step-num {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 10pt;
-  color: var(--clay-deep);
-}
-
-.summary-step-name {
-  font-size: 9.5pt;
-  color: var(--text);
-}
-
-.summary-values {
-  font-size: 8.5pt;
-  letter-spacing: 0.06em;
-  color: var(--clay-deep);
-  margin-top: auto;
-  padding-top: 4mm;
-  border-top: 1px solid var(--line-dark);
-}
-
-.summary-photo {
-  height: 48mm;
-  overflow: hidden;
-}
-
-.summary-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
-}
-
-.summary-cap {
-  font-size: 8pt;
+.expect-list li {
+  position: relative;
+  padding-left: 8mm;
+  font-size: 9pt;
   color: var(--muted);
   line-height: 1.5;
-  margin-top: 4mm;
 }
 
-.summary-cap em {
-  color: var(--clay-deep);
+.expect-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 4mm;
+  height: 1px;
+  background: var(--clay);
 }
 
 .contact-band {
@@ -1174,20 +1021,6 @@ a {
     max-width: none;
   }
 
-  .steps {
-    grid-template-columns: 1fr;
-    gap: 34px;
-    margin-top: 12mm;
-  }
-
-  .steps::before {
-    display: none;
-  }
-
-  .step {
-    padding-top: 14mm;
-  }
-
   .profile-wrap {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -1226,18 +1059,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .gallery-pair {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-feature {
-    height: 320px;
-  }
-
-  .gallery-tall {
-    height: 320px;
-  }
-
   .contact-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1246,12 +1067,12 @@ a {
     padding-top: 10mm;
   }
 
-  .summary-grid {
+  .aula-phases {
     grid-template-columns: 1fr;
   }
 
-  .summary-steps {
-    margin-top: 4mm;
+  .expect-list {
+    grid-template-columns: 1fr;
   }
 
   .footer {

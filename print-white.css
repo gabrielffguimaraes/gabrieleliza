@@ -138,19 +138,6 @@
     background: #96693a;
   }
 
-  /* ---- como ensinamos ---- */
-  .steps::before {
-    background: rgba(21, 36, 39, 0.16);
-  }
-
-  .step-num {
-    color: #96693a;
-  }
-
-  .step p {
-    color: #5c6c69;
-  }
-
   /* ---- introdução ---- */
   .intro-quote p {
     color: #152427;
@@ -209,11 +196,6 @@
   .profile-focus strong,
   .ink .profile-focus strong {
     color: #96693a;
-  }
-
-  /* ---- galeria ---- */
-  .gallery-credits {
-    color: #5c6c69;
   }
 
   /* ---- contato ---- */
