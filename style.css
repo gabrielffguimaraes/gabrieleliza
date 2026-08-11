@@ -959,6 +959,141 @@ a {
 }
 
 /* ============================================================
+   Página 5 — Nosso Trabalho (resumo + contato)
+   ============================================================ */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10mm;
+  margin-top: 4mm;
+}
+
+.summary-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 15pt;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
+}
+
+.summary-copy {
+  font-size: 9pt;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 5mm;
+}
+
+.summary-steps {
+  list-style: none;
+  margin-top: auto;
+}
+
+.summary-steps li {
+  display: flex;
+  align-items: baseline;
+  gap: 6mm;
+  padding: 3mm 0;
+  border-top: 1px solid var(--line-dark);
+}
+
+.summary-step-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 10pt;
+  color: var(--clay-deep);
+}
+
+.summary-step-name {
+  font-size: 9.5pt;
+  color: var(--text);
+}
+
+.summary-values {
+  font-size: 8.5pt;
+  letter-spacing: 0.06em;
+  color: var(--clay-deep);
+  margin-top: auto;
+  padding-top: 4mm;
+  border-top: 1px solid var(--line-dark);
+}
+
+.summary-photo {
+  height: 48mm;
+  overflow: hidden;
+}
+
+.summary-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+.summary-cap {
+  font-size: 8pt;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 4mm;
+}
+
+.summary-cap em {
+  color: var(--clay-deep);
+}
+
+.contact-band {
+  margin-top: auto;
+  padding: 10mm 12mm 8mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-band-eyebrow {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--clay);
+  text-align: center;
+  margin-bottom: 3mm;
+}
+
+.contact-band-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 18pt;
+  color: #f0ece1;
+  text-align: center;
+  margin-bottom: 8mm;
+}
+
+.contact-band .contact-grid {
+  border-top-color: var(--line-light);
+}
+
+.contact-band .contact-label {
+  color: var(--clay);
+}
+
+.contact-band .contact-value {
+  color: #f0ece1;
+}
+
+.contact-band .contact-value a {
+  border-bottom-color: var(--clay);
+}
+
+.contact-band .footer {
+  margin-top: 8mm;
+}
+
+/* ============================================================
    Impressão — Ctrl+P → Salvar como PDF
    ============================================================ */
 
@@ -1109,6 +1244,14 @@ a {
 
   .contact-block {
     padding-top: 10mm;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-steps {
+    margin-top: 4mm;
   }
 
   .footer {

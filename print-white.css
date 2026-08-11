@@ -217,6 +217,33 @@
   }
 
   /* ---- contato ---- */
+  .contact-band {
+    background: #ffffff !important;
+    border: 1px solid rgba(21, 36, 39, 0.16);
+    border-radius: 2mm;
+  }
+
+  .contact-band .contact-grid {
+    border-top-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .contact-band-eyebrow,
+  .contact-band-title {
+    color: #152427;
+  }
+
+  .contact-band .contact-label {
+    color: #96693a;
+  }
+
+  .contact-band .contact-value {
+    color: #152427;
+  }
+
+  .contact-band .contact-value a {
+    border-bottom-color: #96693a;
+  }
+
   .footer {
     background: #ffffff !important;
     color: #152427;
