@@ -93,40 +93,49 @@
     color: #96693a;
   }
 
-  /* ---- proposta ---- */
-  .proposal-top {
-    border-bottom-color: rgba(21, 36, 39, 0.16);
-  }
-
-  .balance-list,
-  .balance-list li {
+  /* ---- filosofia & quem somos ---- */
+  .philosophy-top,
+  .duo {
     border-color: rgba(21, 36, 39, 0.16);
   }
 
-  .balance-list li {
-    color: #152427;
-  }
-
-  .balance-list .num {
+  .philosophy-sub,
+  .philosophy-sub em {
     color: #96693a;
   }
 
-  .moment {
+  .philosophy-copy p,
+  .who-list li,
+  .who-photo-label,
+  .duo-copy {
+    color: #5c6c69;
+  }
+
+  .philosophy-copy p {
+    border-color: rgba(21, 36, 39, 0.08);
+  }
+
+  .who-photo {
     background: #f7f2e5;
     border: 1px solid #d8cdb6;
-    border-top: 2px solid #96693a;
   }
 
-  .moment::before {
-    color: #96693a;
-  }
-
-  .moment h3 {
+  .who-name,
+  .duo-title {
     color: #152427;
   }
 
-  .moment p {
-    color: #5c6c69;
+  .who-role,
+  .duo-values {
+    color: #96693a;
+  }
+
+  .who-list li {
+    border-bottom-color: rgba(21, 36, 39, 0.08);
+  }
+
+  .who-list li::before {
+    background: #96693a;
   }
 
   /* ---- como ensinamos ---- */

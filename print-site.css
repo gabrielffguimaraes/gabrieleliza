@@ -395,91 +395,167 @@ a {
 }
 
 /* ============================================================
-   Página 3 — Nossa Proposta
+   Página 2 — Nossa Filosofia & Quem Somos
    ============================================================ */
 
-.proposal-top {
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  gap: 16mm;
-  align-items: start;
+.philosophy-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 297mm;
+}
+
+.philosophy-top {
   padding-bottom: 12mm;
   border-bottom: 1px solid var(--line-light);
-  margin-bottom: 14mm;
+  margin-bottom: 12mm;
 }
 
-.proposal-lead p.muted-light {
-  font-size: 10.5pt;
-  color: var(--muted-light);
-  line-height: 1.7;
-  max-width: 86mm;
-}
-
-.balance-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  border-top: 1px solid var(--line-light);
-}
-
-.balance-list li {
-  display: flex;
-  align-items: baseline;
-  gap: 5mm;
-  padding: 3.6mm 2mm 3.6mm 0;
-  border-bottom: 1px solid var(--line-light);
-  font-size: 10pt;
-  color: #eef0e9;
-}
-
-.balance-list .num {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 9pt;
-  color: var(--clay);
-  min-width: 8mm;
-}
-
-.class-moments {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10mm;
-  counter-reset: momento;
-}
-
-.moment {
-  position: relative;
-  counter-increment: momento;
-  padding: 8mm 7mm 9mm;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(233, 240, 241, 0.14);
-  border-top: 2px solid var(--clay);
-}
-
-.moment::before {
-  content: "0" counter(momento);
-  display: block;
-  font-family: var(--serif);
-  font-style: italic;
+.philosophy-top .display {
   font-size: 22pt;
-  line-height: 1;
+  margin-bottom: 8mm;
+}
+
+.philosophy-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.35;
   color: #e8c9a0;
+  max-width: 150mm;
+  margin-bottom: 10mm;
+}
+
+.philosophy-sub em {
+  font-style: normal;
+  color: var(--clay);
+}
+
+.philosophy-copy p {
+  font-size: 10pt;
+  line-height: 1.7;
+  color: var(--muted-light);
+  max-width: 150mm;
   margin-bottom: 5mm;
 }
 
-.moment h3 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 14pt;
-  color: #f4efe4;
-  margin-bottom: 4mm;
+.who-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.moment p {
-  font-size: 9.5pt;
+.who-title {
+  text-align: center;
+  margin-bottom: 8mm;
+}
+
+.who-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14mm;
+  align-items: start;
+}
+
+.who-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.who-photo {
+  width: 100%;
+  height: 52mm;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6mm;
+}
+
+.who-photo-label {
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
   color: var(--muted-light);
+}
+
+.who-name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 17pt;
+  line-height: 1.1;
+  color: #f4efe4;
+  margin-bottom: 2mm;
+}
+
+.who-role {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 6mm;
+}
+
+.who-list {
+  list-style: none;
+}
+
+.who-list li {
+  font-size: 9pt;
+  line-height: 1.5;
+  color: var(--muted-light);
+  padding: 1.8mm 0 1.8mm 6mm;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.who-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 3mm;
+  height: 1px;
+  background: var(--clay);
+}
+
+.who-list li:last-child {
+  border-bottom: none;
+}
+
+.duo {
+  margin-top: auto;
+  padding-top: 10mm;
+  border-top: 1px solid var(--line-light);
+  text-align: center;
+}
+
+.duo-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 13pt;
+  color: #f4efe4;
+  margin-bottom: 3mm;
+}
+
+.duo-values {
+  font-family: var(--serif);
+  font-size: 11pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 5mm;
+}
+
+.duo-copy {
+  font-size: 9pt;
   line-height: 1.6;
+  color: var(--muted-light);
+  max-width: 140mm;
+  margin: 0 auto;
 }
 
 /* ============================================================
@@ -949,13 +1025,18 @@ a {
     text-align: right;
   }
 
-  .intro-grid,
-  .proposal-top {
+  .intro-grid {
     grid-template-columns: 1fr;
   }
 
-  .proposal-lead {
-    margin-bottom: 8mm;
+  .who-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .philosophy-copy p,
+  .duo-copy {
+    max-width: none;
   }
 
   .steps {
@@ -970,11 +1051,6 @@ a {
 
   .step {
     padding-top: 14mm;
-  }
-
-  .class-moments {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .profile-wrap {
