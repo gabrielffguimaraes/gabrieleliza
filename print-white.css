@@ -41,15 +41,15 @@
     color: #5c6c69;
   }
 
-  /* ---- capa ---- */
+  /* ---- página 1 — capa ---- */
   .hero-shade {
     display: none;
   }
 
   .hero-band {
     background: #ffffff;
-    height: 130mm;
-    min-height: 130mm;
+    height: 132mm;
+    min-height: 132mm;
   }
 
   .hero-media {
@@ -67,7 +67,7 @@
   .hero-content {
     position: relative;
     min-height: 0;
-    padding: 80mm 17mm 0;
+    padding: 82mm 17mm 0;
     color: #152427;
   }
 
@@ -88,156 +88,91 @@
 
   .hero-loc {
     position: static;
-    margin-top: 12mm;
+    margin-top: 10mm;
     text-align: left;
     color: #96693a;
   }
 
-  /* ---- filosofia & quem somos ---- */
-  .philosophy-top,
-  .duo {
-    border-color: rgba(21, 36, 39, 0.16);
-  }
-
-  .philosophy-sub,
-  .philosophy-sub em {
-    color: #96693a;
-  }
-
-  .philosophy-copy p,
-  .who-list li,
-  .who-photo-label,
-  .duo-copy {
+  .intro-copy {
     color: #5c6c69;
   }
 
-  .philosophy-copy p {
-    border-color: rgba(21, 36, 39, 0.08);
-  }
-
-  .who-photo {
-    background: #f7f2e5;
-    border: 1px solid #d8cdb6;
-  }
-
-  .who-name,
-  .duo-title {
-    color: #152427;
-  }
-
-  .who-role,
-  .duo-values {
-    color: #96693a;
-  }
-
-  .who-list li {
-    border-bottom-color: rgba(21, 36, 39, 0.08);
-  }
-
-  .who-list li::before {
-    background: #96693a;
-  }
-
-  /* ---- introdução ---- */
-  .intro-quote p {
-    color: #152427;
-  }
-
-  .intro-quote em {
-    color: #96693a;
-  }
-
-  /* ---- perfis ---- */
-  .profile-role,
-  .ink .profile-role {
-    color: #96693a;
-  }
-
-  .profile-intro.muted-light {
-    color: #5c6c69;
-  }
-
-  .stats,
-  .ink .stats {
-    border-color: rgba(21, 36, 39, 0.16);
-  }
-
-  .stat,
-  .ink .stat {
-    border-right-color: rgba(21, 36, 39, 0.16);
-  }
-
-  .stat-num,
-  .ink .stat-num {
-    color: #152427;
-  }
-
-  .stat-label,
-  .ink .stat-label {
-    color: #5c6c69;
-  }
-
-  .col h3,
-  .ink .col h3 {
-    color: #96693a;
-  }
-
-  .col li,
-  .ink .col li {
-    color: #5c6c69;
-    border-bottom-color: rgba(21, 36, 39, 0.08);
-  }
-
-  .profile-focus,
-  .ink .profile-focus {
-    color: #5c6c69;
-  }
-
-  .profile-focus strong,
-  .ink .profile-focus strong {
-    color: #96693a;
-  }
-
-  /* ---- contato ---- */
-  .contact-band {
+  .contact-strip {
     background: #ffffff !important;
     border: 1px solid rgba(21, 36, 39, 0.16);
-    border-radius: 2mm;
   }
 
-  .contact-band .contact-grid {
-    border-top-color: rgba(21, 36, 39, 0.16);
-  }
-
-  .contact-band-eyebrow,
-  .contact-band-title {
-    color: #152427;
-  }
-
-  .contact-band .contact-label {
+  .contact-strip .contact-label {
     color: #96693a;
   }
 
-  .contact-band .contact-value {
+  .contact-strip .contact-value {
     color: #152427;
   }
 
-  .contact-band .contact-value a {
+  .contact-strip .contact-value a {
     border-bottom-color: #96693a;
   }
 
-  .footer {
-    background: #ffffff !important;
-    color: #152427;
-    border-top-color: rgba(21, 36, 39, 0.16);
+  /* ---- página 2 — proposta ---- */
+  .proposta-head,
+  .aula,
+  .proposta-quote {
+    border-color: rgba(21, 36, 39, 0.16);
   }
 
-  .footer-name {
-    color: #152427;
+  .proposta-sub,
+  .proposta-sub em {
+    color: #96693a;
   }
 
-  .footer-note,
-  .footer-meta {
+  .proposta-copy p,
+  .concept p,
+  .aula-phase p {
     color: #5c6c69;
+  }
+
+  .concept,
+  .aula-phase {
+    border-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .concept-num,
+  .aula-phase-num {
+    color: #96693a;
+  }
+
+  .concept h3,
+  .aula-title,
+  .proposta-quote {
+    color: #152427;
+  }
+
+  /* ---- página 3 — credenciais ---- */
+  #sobre .display em,
+  .cred-name,
+  .traj-title {
+    color: #152427;
+  }
+
+  .cred-role,
+  .cred-years,
+  .cred-sub,
+  .traj-col h4 {
+    color: #96693a;
+  }
+
+  .cred-text,
+  .sobre-intro,
+  .cred-list li,
+  .traj-list li {
+    color: #5c6c69;
+  }
+
+  .cred-col,
+  .traj,
+  .cred-list li,
+  .traj-list li {
+    border-color: rgba(21, 36, 39, 0.16);
   }
 }

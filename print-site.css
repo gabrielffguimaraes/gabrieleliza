@@ -172,13 +172,18 @@ a {
 }
 
 /* ============================================================
-   Página 1 — Capa
+   Página 1 — Apresentação (capa)
    ============================================================ */
+
+#apresentacao {
+  display: flex;
+  flex-direction: column;
+}
 
 .hero-band {
   position: relative;
-  height: 130mm;
-  min-height: 130mm;
+  height: 132mm;
+  min-height: 132mm;
   overflow: hidden;
 }
 
@@ -259,512 +264,42 @@ a {
   text-align: right;
 }
 
-/* ============================================================
-   Página 2 — Introdução
-   ============================================================ */
+/* Parte inferior da capa — proposta resumida + contatos */
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: 6fr 5fr;
-  gap: 14mm;
-  align-items: center;
-}
-
-.intro-copy p {
-  font-size: 10.5pt;
-  color: var(--muted);
-  margin-bottom: 7mm;
-  line-height: 1.6;
-}
-
-.intro-copy p:first-of-type {
-  color: var(--text);
-  font-size: 12pt;
-  line-height: 1.5;
-}
-
-.intro-figure {
-  width: 100%;
-  max-width: 74mm;
-  margin: 0 auto;
-}
-
-.intro-figure img {
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-}
-
-.frame-right,
-.frame-left {
-  position: relative;
-}
-
-.frame-right::after,
-.frame-left::after {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  border: 1px solid var(--clay);
-}
-
-.frame-right::after {
-  top: -14px;
-  right: -14px;
-}
-
-.frame-left::after {
-  top: -14px;
-  left: -14px;
-}
-
-.intro-quote {
-  margin: 10mm auto 0;
-  max-width: 150mm;
-  text-align: center;
-}
-
-.intro-quote::before {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 1px;
-  margin: 0 auto 8mm;
-  background: var(--clay);
-}
-
-.intro-quote p {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 16pt;
-  line-height: 1.3;
-  color: var(--text);
-}
-
-.intro-quote em {
-  color: var(--clay-deep);
-  font-style: normal;
-}
-
-/* Página 1 — Capa + Introdução (folha única) */
 .intro-lower {
+  flex: 1;
   min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.intro-lower .intro-grid {
-  gap: 12mm;
-  grid-template-columns: 4fr 5fr;
-  align-items: center;
+.intro-head {
+  max-width: 135mm;
+  margin-bottom: 12mm;
 }
 
-.intro-lower .intro-left {
-  min-width: 0;
-}
-
-.intro-lower .intro-left .eyebrow {
+.intro-head .eyebrow {
   margin-bottom: 7mm;
 }
 
-.intro-lower .intro-left h2 {
+.intro-head .display {
   font-size: 18pt;
   margin-bottom: 8mm;
 }
 
-.intro-lower .intro-copy p {
-  font-size: 9.5pt;
-  margin-bottom: 5mm;
-}
-
-.intro-lower .intro-copy p:first-of-type {
+.intro-copy {
   font-size: 10.5pt;
-}
-
-.intro-lower .intro-figure {
-  width: 100%;
-  max-width: 92mm;
-  height: 138mm;
-  margin: 0 0 0 auto;
-}
-
-.intro-lower .intro-figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 35%;
-}
-
-/* ============================================================
-   Página 2 — Nossa Filosofia & Quem Somos
-   ============================================================ */
-
-.philosophy-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-.philosophy-top {
-  padding-bottom: 10mm;
-  border-bottom: 1px solid var(--line-light);
-  margin-bottom: 10mm;
-}
-
-.philosophy-top .display {
-  font-size: 20pt;
-  margin-bottom: 7mm;
-}
-
-.philosophy-sub {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 14pt;
-  line-height: 1.35;
-  color: #e8c9a0;
-  max-width: 150mm;
-  margin-bottom: 8mm;
-}
-
-.philosophy-sub em {
-  font-style: normal;
-  color: var(--clay);
-}
-
-.philosophy-copy p {
-  font-size: 9.5pt;
-  line-height: 1.6;
-  color: var(--muted-light);
-  max-width: 150mm;
-  margin-bottom: 4mm;
-}
-
-.who-wrap {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.who-title {
-  text-align: center;
-  margin-bottom: 7mm;
-}
-
-.who-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14mm;
-  align-items: start;
-}
-
-.who-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.who-photo {
-  width: 100%;
-  height: 48mm;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--line-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5mm;
-}
-
-.who-photo-label {
-  font-size: 6.5pt;
-  font-weight: 600;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--muted-light);
-}
-
-.who-name {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 17pt;
-  line-height: 1.1;
-  color: #f4efe4;
-  margin-bottom: 2mm;
-}
-
-.who-role {
-  font-family: var(--sans);
-  font-size: 6.5pt;
-  font-weight: 600;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--clay);
-  margin-bottom: 6mm;
-}
-
-.who-list {
-  list-style: none;
-}
-
-.who-list li {
-  font-size: 8.5pt;
-  line-height: 1.45;
-  color: var(--muted-light);
-  padding: 1.5mm 0 1.5mm 6mm;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  position: relative;
-}
-
-.who-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 3mm;
-  height: 1px;
-  background: var(--clay);
-}
-
-.who-list li:last-child {
-  border-bottom: none;
-}
-
-.duo {
-  margin-top: auto;
-  padding-top: 7mm;
-  border-top: 1px solid var(--line-light);
-  text-align: center;
-}
-
-.duo-title {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 12pt;
-  color: #f4efe4;
-  margin-bottom: 2.5mm;
-}
-
-.duo-values {
-  font-family: var(--serif);
-  font-size: 10pt;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--clay);
-  margin-bottom: 4mm;
-}
-
-.duo-copy {
-  font-size: 8.5pt;
-  line-height: 1.55;
-  color: var(--muted-light);
-  max-width: 140mm;
-  margin: 0 auto;
-}
-
-/* ============================================================
-   Páginas 6 e 7 — Perfis
-   ============================================================ */
-
-.profile-wrap {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-  grid-template-areas:
-    "hero hero"
-    "figure body";
-  gap: 7mm 12mm;
-}
-
-.profile-hero {
-  grid-area: hero;
-}
-
-.profile-role {
-  font-family: var(--sans);
-  font-size: 7pt;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--clay-deep);
-  margin-top: -6mm;
-  margin-bottom: 3mm;
-}
-
-.ink .profile-role {
-  color: var(--clay);
-}
-
-.profile-figure {
-  grid-area: figure;
-  align-self: start;
-}
-
-.profile-figure img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-}
-
-.profile-body {
-  grid-area: body;
-}
-
-.profile-intro {
-  font-size: 10.5pt;
-  line-height: 1.6;
   color: var(--text);
-  margin-bottom: 7mm;
-}
-
-.profile-intro.muted-light {
-  color: #dfe7e3;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5mm;
-  border-top: 1px solid var(--line-dark);
-  border-bottom: 1px solid var(--line-dark);
-  padding: 6mm 0;
-  margin-bottom: 7mm;
-}
-
-.ink .stats {
-  border-color: var(--line-light);
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5mm;
-  padding-right: 4mm;
-  border-right: 1px solid var(--line-dark);
-}
-
-.ink .stat {
-  border-right-color: var(--line-light);
-}
-
-.stat:last-child {
-  border-right: none;
-}
-
-.stat-num {
-  font-family: var(--serif);
-  font-size: 21pt;
-  line-height: 1;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-}
-
-.ink .stat-num {
-  color: #f0ece1;
-}
-
-.stat-label {
-  font-size: 6pt;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.ink .stat-label {
-  color: var(--muted-light);
-}
-
-.profile-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 7mm;
-  margin-bottom: 7mm;
-}
-
-.col h3 {
-  font-family: var(--sans);
-  font-size: 6.5pt;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--clay-deep);
-  margin-bottom: 4mm;
-}
-
-.ink .col h3 {
-  color: var(--clay);
-}
-
-.col ul {
-  list-style: none;
-}
-
-.col li {
-  font-size: 8pt;
-  line-height: 1.5;
-  color: var(--muted);
-  padding: 2mm 0;
-  border-bottom: 1px solid rgba(21, 36, 39, 0.08);
-}
-
-.ink .col li {
-  color: var(--muted-light);
-  border-bottom-color: var(--line-light);
-}
-
-.col li:last-child {
-  border-bottom: none;
-}
-
-.profile-focus {
-  font-size: 9pt;
-  line-height: 1.65;
-  color: var(--muted);
+  line-height: 1.6;
   max-width: 120mm;
 }
 
-.ink .profile-focus {
-  color: var(--muted-light);
-}
-
-.profile-focus strong {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
-  color: var(--clay-deep);
-}
-
-.ink .profile-focus strong {
-  color: var(--clay);
-}
-
-/* ============================================================
-   Página 8 — Contato
-   ============================================================ */
-
-.contact-block {
-  max-width: 150mm;
-  margin: 0 auto;
-  padding-top: 26mm;
-  text-align: center;
-}
-
-.contact-block .eyebrow,
-.contact-block .eyebrow::before {
-  justify-content: center;
-}
-
-.contact-block .eyebrow {
-  display: flex;
-}
-
-.contact-block h2 {
-  text-align: center;
-}
-
-.contact-grid {
+.contact-strip {
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12mm;
-  border-top: 1px solid var(--line-dark);
-  padding-top: 12mm;
-  text-align: left;
+  gap: 10mm;
+  padding: 10mm 12mm;
 }
 
 .contact-item {
@@ -782,6 +317,10 @@ a {
   color: var(--clay-deep);
 }
 
+.contact-strip .contact-label {
+  color: var(--clay);
+}
+
 .contact-value {
   font-size: 9.5pt;
   line-height: 1.5;
@@ -789,45 +328,120 @@ a {
   word-break: break-word;
 }
 
+.contact-strip .contact-value {
+  color: #f0ece1;
+}
+
 .contact-value a {
   border-bottom: 1px solid var(--clay);
   padding-bottom: 1px;
 }
 
-.footer {
-  margin-top: auto;
-  padding: 12mm 0 0;
-  border-top: 1px solid var(--line-light);
-  color: #f0ece1;
+/* ============================================================
+   Página 2 — Nossa Proposta / Filosofia / Experiência do Aluno
+   ============================================================ */
+
+.proposta-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
-.footer-name {
+.proposta-head {
+  padding-bottom: 10mm;
+  border-bottom: 1px solid var(--line-light);
+  margin-bottom: 10mm;
+}
+
+.proposta-head .display {
+  font-size: 20pt;
+  margin-bottom: 7mm;
+}
+
+.proposta-sub {
   font-family: var(--serif);
-  font-size: 16pt;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 1.35;
+  color: #e8c9a0;
+  max-width: 150mm;
+  margin-bottom: 8mm;
+}
+
+.proposta-sub em {
+  font-style: normal;
+  color: var(--clay);
+}
+
+.proposta-copy p {
+  font-size: 9.5pt;
+  line-height: 1.6;
+  color: var(--muted-light);
+  max-width: 150mm;
+  margin-bottom: 4mm;
+}
+
+/* quatro conceitos */
+
+.concepts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7mm 12mm;
+  margin-bottom: 10mm;
+}
+
+.concept {
+  border-top: 1px solid var(--line-light);
+  padding-top: 6mm;
+}
+
+.concept-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--clay);
+  display: block;
   margin-bottom: 2mm;
 }
 
-.footer-note,
-.footer-meta {
-  font-size: 7pt;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.concept h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 14pt;
+  color: #f4efe4;
+  margin-bottom: 3mm;
+}
+
+.concept p {
+  font-size: 8.5pt;
+  line-height: 1.55;
   color: var(--muted-light);
 }
 
-/* ============================================================
-   Página 5 — Como é a aula + Contato
-   ============================================================ */
+/* como acontece a aula */
+
+.aula {
+  border-top: 1px solid var(--line-light);
+  padding-top: 8mm;
+  margin-bottom: 10mm;
+}
+
+.aula-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 16pt;
+  color: #f4efe4;
+  margin-bottom: 6mm;
+}
 
 .aula-phases {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10mm;
-  margin-top: 4mm;
 }
 
 .aula-phase {
-  border-top: 1px solid var(--line-dark);
+  border-top: 1px solid var(--line-light);
   padding-top: 6mm;
 }
 
@@ -835,110 +449,172 @@ a {
   font-family: var(--serif);
   font-style: italic;
   font-size: 11pt;
-  color: var(--clay-deep);
+  color: var(--clay);
   display: block;
-  margin-bottom: 2mm;
-}
-
-.aula-phase h3 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 15pt;
   margin-bottom: 3mm;
-  color: var(--text);
 }
 
 .aula-phase p {
   font-size: 9pt;
-  color: var(--muted);
-  line-height: 1.6;
+  color: var(--muted-light);
+  line-height: 1.55;
 }
 
-.expect-block {
-  margin-top: 10mm;
-  margin-bottom: 18mm;
+/* frase de destaque */
+
+.proposta-quote {
+  margin-top: auto;
+  padding-top: 12mm;
+  border-top: 1px solid var(--line-light);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.35;
+  color: #f4efe4;
+  max-width: 150mm;
+}
+
+/* ============================================================
+   Página 3 — Liza & Gabriel / Trajetória e Credenciais
+   ============================================================ */
+
+#sobre .display {
+  font-size: 21pt;
+}
+
+#sobre .display em {
+  font-size: 13pt;
+  font-style: italic;
+  display: block;
+  letter-spacing: 0.04em;
+  margin-top: 6mm;
+  color: var(--clay-deep);
+}
+
+.sobre-intro {
+  font-size: 11pt;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 130mm;
+  margin-bottom: 10mm;
+}
+
+.cred-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12mm;
+  margin-bottom: 10mm;
+}
+
+.cred-col {
+  border-top: 1px solid var(--line-dark);
+  padding-top: 6mm;
+}
+
+.cred-name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 19pt;
+  color: var(--text);
+  margin-bottom: 2mm;
+}
+
+.cred-role {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
+}
+
+.cred-years {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
+}
+
+.cred-text {
+  font-size: 9pt;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 6mm;
+}
+
+.cred-sub {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
+}
+
+.cred-list {
+  list-style: none;
+}
+
+.cred-list li {
+  font-size: 8.5pt;
+  line-height: 1.5;
+  color: var(--muted);
+  padding: 2.5mm 0;
+  border-bottom: 1px solid rgba(21, 36, 39, 0.08);
+}
+
+.cred-list li:last-child {
+  border-bottom: none;
+}
+
+/* nossa trajetória juntos */
+
+.traj {
   border-top: 1px solid var(--line-dark);
   padding-top: 8mm;
 }
 
-.expect-title {
+.traj-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 15pt;
-  color: var(--clay-deep);
-  margin-bottom: 5mm;
+  font-size: 16pt;
+  color: var(--text);
+  margin-bottom: 6mm;
 }
 
-.expect-list {
-  list-style: none;
+.traj-cols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3mm 12mm;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10mm;
 }
 
-.expect-list li {
-  position: relative;
-  padding-left: 8mm;
-  font-size: 9pt;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.expect-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 4mm;
-  height: 1px;
-  background: var(--clay);
-}
-
-.contact-band {
-  margin-top: auto;
-  padding: 10mm 12mm 8mm;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-band-eyebrow {
+.traj-col h4 {
   font-family: var(--sans);
   font-size: 6.5pt;
   font-weight: 600;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--clay);
-  text-align: center;
-  margin-bottom: 3mm;
+  color: var(--clay-deep);
+  margin-bottom: 4mm;
 }
 
-.contact-band-title {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 18pt;
-  color: #f0ece1;
-  text-align: center;
-  margin-bottom: 8mm;
+.traj-list {
+  list-style: none;
 }
 
-.contact-band .contact-grid {
-  border-top-color: var(--line-light);
+.traj-list li {
+  font-size: 8pt;
+  line-height: 1.5;
+  color: var(--muted);
+  padding: 2mm 0;
+  border-bottom: 1px solid rgba(21, 36, 39, 0.08);
 }
 
-.contact-band .contact-label {
-  color: var(--clay);
-}
-
-.contact-band .contact-value {
-  color: #f0ece1;
-}
-
-.contact-band .contact-value a {
-  border-bottom-color: var(--clay);
-}
-
-.contact-band .footer {
-  margin-top: 8mm;
+.traj-list li:last-child {
+  border-bottom: none;
 }
 
 /* ============================================================
@@ -1008,76 +684,30 @@ a {
     text-align: right;
   }
 
-  .intro-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .who-cols {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .philosophy-copy p,
-  .duo-copy {
-    max-width: none;
-  }
-
-  .profile-wrap {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "hero"
-      "figure"
-      "body";
-  }
-
-  .profile-figure {
-    max-width: 300px;
-  }
-
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
-
-  .stat:nth-child(2) {
-    border-right: none;
-  }
-
-  .stat {
-    border-bottom: 1px solid var(--line-dark);
-    padding: 0 0 12px;
-  }
-
-  .ink .stat {
-    border-bottom-color: var(--line-light);
-  }
-
-  .stat:last-child {
-    border-bottom: none;
-  }
-
-  .profile-cols {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
+  .contact-strip {
     grid-template-columns: 1fr 1fr;
   }
 
-  .contact-block {
-    padding-top: 10mm;
+  .concepts {
+    grid-template-columns: 1fr;
   }
 
   .aula-phases {
     grid-template-columns: 1fr;
   }
 
-  .expect-list {
+  .proposta-copy p,
+  .sobre-intro,
+  .proposta-quote {
+    max-width: none;
+  }
+
+  .cred-cols {
     grid-template-columns: 1fr;
   }
 
-  .footer {
-    margin-top: 24px;
+  .traj-cols {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1090,7 +720,7 @@ a {
     font-size: 8.5pt;
   }
 
-  .contact-grid {
+  .contact-strip {
     grid-template-columns: 1fr;
   }
 }
