@@ -111,7 +111,7 @@ a {
 
 .eyebrow {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -226,24 +226,24 @@ a {
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 44pt;
+  font-size: 46pt;
   line-height: 0.98;
   letter-spacing: -0.02em;
-  margin-bottom: 6mm;
+  margin-bottom: 7mm;
 }
 
 .hero-sub {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 15pt;
+  font-size: 16pt;
   color: #e8c9a0;
   margin-bottom: 6mm;
 }
 
 .hero-tag {
   font-family: var(--sans);
-  font-size: 9.5pt;
-  letter-spacing: 0.14em;
+  font-size: 10pt;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #e6ece9;
   max-width: 95mm;
@@ -256,7 +256,7 @@ a {
   top: 12mm;
   right: 17mm;
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -274,43 +274,54 @@ a {
 }
 
 .intro-head {
-  max-width: 135mm;
-  margin-bottom: 12mm;
+  max-width: 145mm;
+  margin-bottom: 14mm;
 }
 
 .intro-head .eyebrow {
-  margin-bottom: 7mm;
-}
-
-.intro-head .display {
-  font-size: 18pt;
   margin-bottom: 8mm;
 }
 
+.intro-head .display {
+  font-size: 20pt;
+  margin-bottom: 9mm;
+}
+
 .intro-copy {
-  font-size: 10.5pt;
+  font-size: 11pt;
   color: var(--text);
-  line-height: 1.6;
-  max-width: 120mm;
+  line-height: 1.65;
+  max-width: 125mm;
 }
 
 .contact-strip {
   margin-top: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10mm;
-  padding: 10mm 12mm;
+  gap: 0;
+  padding: 9mm 12mm;
 }
 
 .contact-item {
   display: flex;
   flex-direction: column;
   gap: 3mm;
+  padding: 0 9mm;
+  border-right: 1px solid var(--line-light);
+}
+
+.contact-item:first-child {
+  padding-left: 0;
+}
+
+.contact-item:last-child {
+  border-right: none;
+  padding-right: 0;
 }
 
 .contact-label {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -322,7 +333,7 @@ a {
 }
 
 .contact-value {
-  font-size: 9.5pt;
+  font-size: 10pt;
   line-height: 1.5;
   color: var(--text);
   word-break: break-word;
@@ -364,7 +375,7 @@ a {
   font-size: 14pt;
   line-height: 1.35;
   color: #e8c9a0;
-  max-width: 150mm;
+  max-width: 155mm;
   margin-bottom: 8mm;
 }
 
@@ -377,7 +388,7 @@ a {
   font-size: 9.5pt;
   line-height: 1.6;
   color: var(--muted-light);
-  max-width: 150mm;
+  max-width: 155mm;
   margin-bottom: 4mm;
 }
 
@@ -392,13 +403,14 @@ a {
 
 .concept {
   border-top: 1px solid var(--line-light);
-  padding-top: 6mm;
+  padding-top: 4mm;
 }
 
 .concept-num {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 11pt;
+  font-size: 12pt;
+  line-height: 1;
   color: var(--clay);
   display: block;
   margin-bottom: 2mm;
@@ -423,7 +435,7 @@ a {
 .aula {
   border-top: 1px solid var(--line-light);
   padding-top: 8mm;
-  margin-bottom: 10mm;
+  margin-bottom: 9mm;
 }
 
 .aula-title {
@@ -437,41 +449,50 @@ a {
 .aula-phases {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10mm;
+  gap: 9mm;
 }
 
 .aula-phase {
   border-top: 1px solid var(--line-light);
-  padding-top: 6mm;
+  padding-top: 4mm;
 }
 
 .aula-phase-num {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 11pt;
+  font-size: 16pt;
+  line-height: 1;
   color: var(--clay);
   display: block;
-  margin-bottom: 3mm;
+  margin-bottom: 2mm;
+}
+
+.aula-phase-label {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 13pt;
+  color: #f4efe4;
+  margin-bottom: 2mm;
 }
 
 .aula-phase p {
-  font-size: 9pt;
+  font-size: 8.5pt;
   color: var(--muted-light);
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 /* frase de destaque */
 
 .proposta-quote {
   margin-top: auto;
-  padding-top: 12mm;
+  padding-top: 10mm;
   border-top: 1px solid var(--line-light);
   font-family: var(--serif);
   font-style: italic;
   font-size: 15pt;
-  line-height: 1.35;
+  line-height: 1.4;
   color: #f4efe4;
-  max-width: 150mm;
+  max-width: 160mm;
 }
 
 /* ============================================================
@@ -479,79 +500,79 @@ a {
    ============================================================ */
 
 #sobre .display {
-  font-size: 21pt;
+  font-size: 20pt;
 }
 
 #sobre .display em {
-  font-size: 13pt;
+  font-size: 12pt;
   font-style: italic;
   display: block;
   letter-spacing: 0.04em;
-  margin-top: 6mm;
+  margin-top: 4mm;
   color: var(--clay-deep);
 }
 
 .sobre-intro {
-  font-size: 11pt;
-  line-height: 1.6;
+  font-size: 10.5pt;
+  line-height: 1.5;
   color: var(--muted);
   max-width: 130mm;
-  margin-bottom: 10mm;
+  margin-bottom: 8mm;
 }
 
 .cred-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12mm;
-  margin-bottom: 10mm;
+  gap: 11mm;
+  margin-bottom: 8mm;
 }
 
 .cred-col {
   border-top: 1px solid var(--line-dark);
-  padding-top: 6mm;
+  padding-top: 4mm;
 }
 
 .cred-name {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 19pt;
+  font-size: 20pt;
   color: var(--text);
-  margin-bottom: 2mm;
+  margin-bottom: 1mm;
 }
 
 .cred-role {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
+  margin-bottom: 3mm;
 }
 
 .cred-years {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 11pt;
+  font-size: 12.5pt;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
+  margin-bottom: 3mm;
 }
 
 .cred-text {
   font-size: 9pt;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--muted);
-  margin-bottom: 6mm;
+  margin-bottom: 4mm;
 }
 
 .cred-sub {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
+  margin-bottom: 3mm;
 }
 
 .cred-list {
@@ -560,9 +581,9 @@ a {
 
 .cred-list li {
   font-size: 8.5pt;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--muted);
-  padding: 2.5mm 0;
+  padding: 1.8mm 0;
   border-bottom: 1px solid rgba(21, 36, 39, 0.08);
 }
 
@@ -574,31 +595,31 @@ a {
 
 .traj {
   border-top: 1px solid var(--line-dark);
-  padding-top: 8mm;
+  padding-top: 6mm;
 }
 
 .traj-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 15pt;
   color: var(--text);
-  margin-bottom: 6mm;
+  margin-bottom: 5mm;
 }
 
 .traj-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10mm;
+  gap: 9mm;
 }
 
 .traj-col h4 {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
+  margin-bottom: 3mm;
 }
 
 .traj-list {
@@ -607,9 +628,9 @@ a {
 
 .traj-list li {
   font-size: 8pt;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--muted);
-  padding: 2mm 0;
+  padding: 1.8mm 0;
   border-bottom: 1px solid rgba(21, 36, 39, 0.08);
 }
 

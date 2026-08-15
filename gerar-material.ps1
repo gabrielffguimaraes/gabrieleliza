@@ -207,9 +207,11 @@ try {
   }
 
   # ---------- 1) imagem completa (PNG) ----------
+  # viewport de 1400px: acima do breakpoint responsivo (900px),
+  # para que a prévia reproduza o layout A4 real (folhas lado a lado empilhadas)
   $uriShot = [System.Uri]::new((Join-Path $projeto "index.html")).AbsoluteUri
   Write-Host "Gerando imagem completa (PNG)..." -ForegroundColor Cyan
-  Invoke-CdpRetry $uriShot "shot" $pngFinal 850 900
+  Invoke-CdpRetry $uriShot "shot" $pngFinal 1400 1000
 
   # ---------- 2) JPG comprimido ----------
   Write-Host "Gerando JPG comprimido..." -ForegroundColor Cyan

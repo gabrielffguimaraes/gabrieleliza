@@ -102,6 +102,10 @@
     border: 1px solid rgba(21, 36, 39, 0.16);
   }
 
+  .contact-item {
+    border-color: rgba(21, 36, 39, 0.16);
+  }
+
   .contact-strip .contact-label {
     color: #96693a;
   }
@@ -144,6 +148,7 @@
 
   .concept h3,
   .aula-title,
+  .aula-phase-label,
   .proposta-quote {
     color: #152427;
   }
