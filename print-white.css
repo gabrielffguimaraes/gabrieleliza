@@ -99,15 +99,24 @@
 
   .contact-strip {
     background: #ffffff !important;
-    border: 1px solid rgba(21, 36, 39, 0.16);
+    border: 1px solid rgba(150, 105, 58, 0.45);
+    box-shadow: inset 0 1px 0 rgba(150, 105, 58, 0.18);
+  }
+
+  .contact-strip::before {
+    background: linear-gradient(90deg, #96693a 0%, #d8b98a 50%, #96693a 100%);
   }
 
   .contact-item {
-    border-color: rgba(21, 36, 39, 0.16);
+    border-color: rgba(21, 36, 39, 0.12);
   }
 
   .contact-strip .contact-label {
     color: #96693a;
+  }
+
+  .contact-strip .contact-label::before {
+    background: #96693a;
   }
 
   .contact-strip .contact-value {
