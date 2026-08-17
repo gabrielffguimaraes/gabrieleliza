@@ -787,6 +787,7 @@ a {
 .sobre-content {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 /* topo: fotografia à esquerda, texto à direita */
@@ -1053,13 +1054,8 @@ a {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--clay-deep);
-  margin-bottom: 0;
-}
-
-.competition-head {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5mm;
+  margin-bottom: 2.5mm;
+  margin-left: 55mm;
 }
 
 .compete-cols {
