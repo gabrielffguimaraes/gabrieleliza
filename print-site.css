@@ -1033,8 +1033,7 @@ a {
 /* competições — faixa editorial de largura total */
 
 .compete {
-  border-top: 1px solid var(--line-dark);
-  padding-top: 2.5mm;
+  padding-top: 4mm;
 }
 
 .competition-title {
@@ -1050,8 +1049,8 @@ a {
 
 .compete-cols {
   display: grid;
-  grid-template-columns: 50mm 1.1fr 1fr;
-  gap: 5mm;
+  grid-template-columns: 48mm 1fr 1fr;
+  gap: 7mm;
   align-items: start;
 }
 
