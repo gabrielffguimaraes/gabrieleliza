@@ -1046,6 +1046,16 @@ a {
   padding-top: 2.5mm;
 }
 
+.competition-title {
+  font-family: var(--sans);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  margin-bottom: 2.5mm;
+}
+
 .compete-cols {
   display: grid;
   grid-template-columns: 50mm 1.1fr 1fr;
