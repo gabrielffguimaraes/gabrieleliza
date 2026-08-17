@@ -495,7 +495,7 @@ a {
 
 .conc-traj {
   display: grid;
-  grid-template-columns: 40% 20% 40%;
+  grid-template-columns: 1fr 1.3fr 1fr;
   grid-template-rows: auto auto;
   column-gap: 10mm;
   row-gap: 5mm;
@@ -515,7 +515,6 @@ a {
 
 .c-02 {
   grid-area: 1 / 2;
-  font-size: 1.5em;
 }
 
 .c-03 {
@@ -544,7 +543,7 @@ a {
 }
 
 .c-02 {
-  margin-left: 2mm;
+  margin-left: 8mm;
 }
 
 .concept-num {
@@ -608,18 +607,18 @@ a {
 
 .conc-photo-a {
   grid-area: 1 / 3;
-  width: 46mm;
-  height: 66mm;
+  width: 38mm;
+  height: 52mm;
   align-self: start;
   justify-self: center;
 }
 
 .conc-photo-b {
-  grid-area: 1 / 3;
-  width: 44mm;
-  height: 96mm;
-  align-self: start;
-  justify-self: center;
+  grid-area: 2 / 1;
+  width: 31mm;
+  height: 50mm;
+  align-self: end;
+  justify-self: start;
 }
 
 .conc-photo img {
