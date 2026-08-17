@@ -427,8 +427,8 @@ a {
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 8mm;
+  padding-left: 10mm;
   border-top: 1px solid var(--line-dark);
-  text-align: center;
 }
 
 .intro-main {
@@ -448,14 +448,13 @@ a {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 2mm;
 }
 
 .intro-contact-item {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   gap: 4mm;
 }
 
