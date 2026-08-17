@@ -225,7 +225,7 @@ a {
 }
 
 .hero-lead {
-  transform: translateY(15%);
+  transform: translateY(-6%);
 }
 
 .hero-title {
@@ -297,6 +297,18 @@ a {
   max-width: 70mm;
 }
 
+.hero-brand {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14pt;
+  letter-spacing: 0.02em;
+  color: #e8c9a0;
+  margin-top: 4mm;
+  padding-top: 3mm;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+
 .hero-rio {
   position: absolute;
   bottom: 12mm;
@@ -362,20 +374,21 @@ a {
 
 /* título da proposta — abertura da apresentação */
 .intro-head .display {
-  font-size: 15pt;
-  margin-bottom: 4mm;
-  max-width: 130mm;
+  font-size: 19pt;
+  line-height: 1.08;
+  margin-bottom: 5mm;
+  max-width: 140mm;
 }
 
 .intro-head .display em {
-  font-size: 15pt;
+  font-size: 19pt;
   font-style: italic;
 }
 
 .intro-copy {
-  font-size: 9.5pt;
+  font-size: 11pt;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.6;
   max-width: 150mm;
 }
 
@@ -412,7 +425,7 @@ a {
 /* convite + contatos em coluna vertical + espaço para a foto */
 .intro-close {
   margin-top: auto;
-  padding-top: 6mm;
+  padding-top: 8mm;
   border-top: 1px solid var(--line-dark);
 }
 
@@ -424,16 +437,16 @@ a {
 .intro-cta {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 14pt;
+  font-size: 15pt;
   color: var(--clay-deep);
-  margin-bottom: 4mm;
+  margin-bottom: 5mm;
 }
 
 .intro-contact {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2.5mm;
+  gap: 3.5mm;
 }
 
 .intro-contact-item {
@@ -492,9 +505,10 @@ a {
 }
 
 .intro-avail {
-  margin-top: 2mm;
+  margin-top: 4mm;
   font-family: var(--sans);
-  font-size: 8.5pt;
+  font-size: 9pt;
+  line-height: 1.5;
   color: var(--muted);
 }
 

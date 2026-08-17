@@ -81,6 +81,11 @@
     color: #96693a;
   }
 
+  .hero-brand {
+    color: #96693a;
+    border-top-color: rgba(21, 36, 39, 0.16);
+  }
+
   .hero-tag {
     color: #5c6c69;
     border-left-color: #96693a;
