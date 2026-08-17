@@ -48,15 +48,15 @@
 
   .hero-band {
     background: #ffffff;
-    height: 132mm;
-    min-height: 132mm;
+    height: 148mm;
+    min-height: 148mm;
   }
 
   .hero-media {
     position: absolute;
     inset: 0 auto auto 0;
     width: 100%;
-    height: 78mm;
+    height: 82mm;
   }
 
   .hero-media img {
@@ -67,13 +67,13 @@
   .hero-content {
     position: relative;
     min-height: 0;
-    padding: 82mm 17mm 0;
+    padding: 86mm 17mm 0;
     color: #152427;
   }
 
   .hero-title {
     color: #152427;
-    font-size: 28pt;
+    font-size: 32pt;
     margin-top: 2mm;
   }
 
@@ -97,33 +97,45 @@
     color: #5c6c69;
   }
 
-  .contact-strip {
-    background: #ffffff !important;
-    border: 1px solid rgba(150, 105, 58, 0.45);
-    box-shadow: inset 0 1px 0 rgba(150, 105, 58, 0.18);
-  }
-
-  .contact-strip::before {
-    background: linear-gradient(90deg, #96693a 0%, #d8b98a 50%, #96693a 100%);
-  }
-
-  .contact-item {
-    border-color: rgba(21, 36, 39, 0.12);
-  }
-
-  .contact-strip .contact-label {
-    color: #96693a;
-  }
-
-  .contact-strip .contact-label::before {
-    background: #96693a;
-  }
-
-  .contact-strip .contact-value {
+  .intro-head .eyebrow {
     color: #152427;
   }
 
-  .contact-strip .contact-value a {
+  .intro-motion svg {
+    display: block;
+  }
+
+  .intro-motion {
+    color: #96693a;
+  }
+
+  .intro-close {
+    background: #ffffff !important;
+    border-color: rgba(21, 36, 39, 0.16) !important;
+  }
+
+  .intro-cta,
+  .intro-sig {
+    color: #96693a;
+  }
+
+  .intro-avail {
+    color: #5c6c69;
+  }
+
+  .intro-contact-item {
+    border-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .contact-label {
+    color: #96693a;
+  }
+
+  .contact-value {
+    color: #152427;
+  }
+
+  .contact-value a {
     border-bottom-color: #96693a;
   }
 
