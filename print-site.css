@@ -809,7 +809,7 @@ a {
 }
 
 .sobre-intro {
-  font-size: 9.5pt;
+  font-size: 10.5pt;
   line-height: 1.5;
   color: var(--muted);
   max-width: 135mm;
@@ -824,13 +824,13 @@ a {
 .cred-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6mm;
-  margin-bottom: 4mm;
+  gap: 9mm;
+  margin-bottom: 5mm;
 }
 
 .cred-col {
   border-top: 1px solid var(--line-dark);
-  padding-top: 2.5mm;
+  padding-top: 4mm;
 }
 
 .cred-name {
@@ -843,7 +843,7 @@ a {
 
 .cred-role {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -854,13 +854,13 @@ a {
 .cred-years {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 11pt;
+  font-size: 11.5pt;
   color: var(--clay-deep);
   margin-bottom: 1.5mm;
 }
 
 .cred-text {
-  font-size: 8.5pt;
+  font-size: 9.5pt;
   line-height: 1.45;
   color: var(--muted);
   margin-bottom: 2mm;
@@ -868,7 +868,7 @@ a {
 
 .cred-sub {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -881,7 +881,7 @@ a {
 }
 
 .cred-list li {
-  font-size: 8pt;
+  font-size: 9pt;
   line-height: 1.4;
   color: var(--muted);
   padding: 0.9mm 0;
@@ -901,7 +901,7 @@ a {
   margin-top: 2mm;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 9pt;
+  font-size: 10pt;
   line-height: 1.4;
   color: var(--muted);
 }
@@ -909,7 +909,7 @@ a {
 .lang-label {
   font-family: var(--sans);
   font-style: normal;
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -979,7 +979,7 @@ a {
 
 .traj-col h4 {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -992,7 +992,7 @@ a {
 }
 
 .traj-list li {
-  font-size: 8pt;
+  font-size: 9pt;
   line-height: 1.4;
   color: var(--muted);
   padding: 0.9mm 0;
@@ -1038,7 +1038,7 @@ a {
 
 .competition-title {
   font-family: var(--sans);
-  font-size: 6.5pt;
+  font-size: 7pt;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1056,7 +1056,7 @@ a {
 
 .compete-sub {
   font-family: var(--sans);
-  font-size: 6pt;
+  font-size: 6.5pt;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1094,7 +1094,7 @@ a {
   font-family: var(--serif);
   font-style: italic;
   font-weight: 600;
-  font-size: 9pt;
+  font-size: 10pt;
   color: var(--clay-deep);
 }
 
