@@ -224,6 +224,10 @@ a {
   color: #fff;
 }
 
+.hero-lead {
+  transform: translateY(15%);
+}
+
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
@@ -327,6 +331,16 @@ a {
 .intro-head {
   max-width: 150mm;
   margin-bottom: 3mm;
+}
+
+.intro-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13pt;
+  line-height: 1.3;
+  color: var(--clay-deep);
+  max-width: 150mm;
+  margin-bottom: 5mm;
 }
 
 /* título da proposta — abertura da apresentação */
