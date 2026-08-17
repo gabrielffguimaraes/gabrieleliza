@@ -500,7 +500,7 @@ a {
   column-gap: 10mm;
   row-gap: 5mm;
   margin-bottom: 4mm;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   min-height: 0;
   align-items: stretch;
 }
@@ -572,7 +572,7 @@ a {
 /* as duas fotografias como elementos editoriais da narrativa */
 .conc-photo {
   min-height: 0;
-  flex: 1 1 auto;
+  height: 56mm;
   width: 100%;
   background: #2f3e3c;
 }
