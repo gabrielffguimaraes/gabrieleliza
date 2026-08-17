@@ -1051,7 +1051,7 @@ a {
   display: grid;
   grid-template-columns: 48mm 1fr 1fr;
   gap: 7mm;
-  align-items: start;
+  align-items: stretch;
 }
 
 .compete-sub {
@@ -1107,8 +1107,9 @@ a {
 
 .p3-photo-comp {
   width: 100%;
-  height: 48mm;
-  align-self: center;
+  height: auto;
+  align-self: stretch;
+  min-height: 58mm;
 }
 
 /* ============================================================
