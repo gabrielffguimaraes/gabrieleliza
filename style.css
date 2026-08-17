@@ -515,7 +515,7 @@ a {
 .intro-avail {
   margin-top: 0;
   font-family: var(--sans);
-  font-size: 9pt;
+  font-size: 8pt;
   line-height: 1.5;
   color: var(--muted);
 }
