@@ -7,10 +7,51 @@
     <title>Liza &amp; Gabriel — Zouk Brasileiro</title>
     <link rel="stylesheet" href="print-site.css">
     <style>
-        #sobre .compete-sub,
-        #sobre .compete-who,
-        #sobre .compete-results,
-        #sobre .compete-note { font-size: 9pt !important; }
+        /* === Padronização tipográfica — somente Página 3 (#sobre) === */
+        /* Escala consistente (pt): */
+        /* 20 título principal · 15 título de bloco · 11 ênfase · 10.5 subtítulo */
+        /* 10 detalhe · 9.5 corpo · 9 listas/secundário · 7.5 rótulos */
+
+        /* Título principal */
+        #sobre .display { font-size: 20pt !important; margin-bottom: 4mm !important; }
+        #sobre .display em { font-size: 10.5pt !important; }
+
+        /* Rótulos / kickers (uppercase) — um único tamanho */
+        #sobre .eyebrow,
+        #sobre .cred-role,
+        #sobre .cred-sub,
+        #sobre .lang-label,
+        #sobre .traj-col h4,
+        #sobre .competition-title,
+        #sobre .compete-sub {
+            font-size: 7.5pt !important;
+            letter-spacing: 0.2em !important;
+        }
+
+        /* Subtítulo / introdução */
+        #sobre .sobre-intro { font-size: 10.5pt !important; line-height: 1.45 !important; }
+
+        /* Títulos de bloco (nomes e seções) */
+        #sobre .cred-name { font-size: 15pt !important; }
+        #sobre .traj-title { font-size: 15pt !important; line-height: 1.15 !important; }
+
+        /* Ênfase (anos / nomes nas competições) */
+        #sobre .cred-years { font-size: 11pt !important; }
+        #sobre .compete-who { font-size: 11pt !important; }
+
+        /* Corpo de texto */
+        #sobre .cred-text { font-size: 9.5pt !important; line-height: 1.4 !important; }
+        #sobre .cred-lang { font-size: 10pt !important; }
+        #sobre .traj-lead { font-size: 9pt !important; }
+
+        /* Listas e informações secundárias */
+        #sobre .cred-list li { font-size: 9pt !important; line-height: 1.35 !important; }
+        #sobre .traj-list li { font-size: 9pt !important; line-height: 1.35 !important; }
+
+        /* Competições — resultados */
+        #sobre .compete-results { font-size: 9pt !important; line-height: 1.45 !important; }
+        #sobre .c-rank { font-size: 10pt !important; }
+        #sobre .compete-note { font-size: 9pt !important; line-height: 1.4 !important; }
     </style>
 </head>
 <body>
