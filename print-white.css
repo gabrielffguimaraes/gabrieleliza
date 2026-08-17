@@ -93,12 +93,12 @@
     color: #96693a;
   }
 
-  .intro-copy {
-    color: #5c6c69;
+  .hero-tag-lead {
+    color: #96693a;
   }
 
-  .intro-head .eyebrow {
-    color: #152427;
+  .intro-copy {
+    color: #5c6c69;
   }
 
   .intro-motion svg {
@@ -123,12 +123,12 @@
     color: #5c6c69;
   }
 
-  .intro-contact-item {
-    border-color: rgba(21, 36, 39, 0.16);
+  .contact-icon {
+    color: #96693a;
   }
 
-  .contact-label {
-    color: #96693a;
+  .intro-photo {
+    background: transparent !important;
   }
 
   .contact-value {
@@ -153,23 +153,34 @@
 
   .proposta-copy p,
   .concept p,
-  .aula-phase p {
+  .aula-step-desc {
     color: #5c6c69;
   }
 
-  .concept,
-  .aula-phase {
+  .concept {
     border-color: rgba(21, 36, 39, 0.16);
   }
 
   .concept-num,
-  .aula-phase-num {
+  .aula-step-num {
     color: #96693a;
+  }
+
+  .concept-num::before {
+    background: #96693a;
+  }
+
+  .proposta-quote::before {
+    color: #96693a;
+  }
+
+  .conc-photo {
+    background: #f1ebdd !important;
   }
 
   .concept h3,
   .aula-title,
-  .aula-phase-label,
+  .aula-step-name,
   .proposta-quote {
     color: #152427;
   }
@@ -177,28 +188,42 @@
   /* ---- página 3 — credenciais ---- */
   #sobre .display em,
   .cred-name,
-  .traj-title {
+  .traj-title,
+  .compete-who {
     color: #152427;
   }
 
   .cred-role,
   .cred-years,
   .cred-sub,
-  .traj-col h4 {
+  .traj-col h4,
+  .compete-sub,
+  .compete-sub em,
+  .lang-label,
+  .c-rank {
     color: #96693a;
   }
 
   .cred-text,
   .sobre-intro,
   .cred-list li,
-  .traj-list li {
+  .traj-list li,
+  .cred-lang,
+  .traj-lead,
+  .compete-results,
+  .compete-note {
     color: #5c6c69;
   }
 
   .cred-col,
   .traj,
+  .compete,
   .cred-list li,
   .traj-list li {
     border-color: rgba(21, 36, 39, 0.16);
+  }
+
+  .p3-photo {
+    background: #f1ebdd !important;
   }
 }
