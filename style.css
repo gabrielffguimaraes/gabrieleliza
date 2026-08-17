@@ -227,7 +227,7 @@ a {
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 56pt;
+  font-size: 50pt;
   line-height: 0.95;
   letter-spacing: -0.02em;
   margin-bottom: 6mm;
@@ -266,10 +266,38 @@ a {
   padding: 1mm 0;
 }
 
-.hero-loc {
+.hero-proposta {
+  position: absolute;
+  top: 12mm;
+  left: 17mm;
+  z-index: 2;
+  font-family: var(--sans);
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #dfe7e3;
+  text-align: left;
+}
+
+.hero-slogan {
   position: absolute;
   top: 12mm;
   right: 17mm;
+  z-index: 2;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11pt;
+  color: #e8c9a0;
+  text-align: right;
+  max-width: 70mm;
+}
+
+.hero-rio {
+  position: absolute;
+  bottom: 12mm;
+  right: 17mm;
+  z-index: 2;
   font-family: var(--sans);
   font-size: 7pt;
   font-weight: 600;
@@ -1087,9 +1115,25 @@ a {
     min-height: 320px;
   }
 
-  .hero-loc {
-    right: 20px;
+  .hero-proposta {
     top: 16px;
+    left: 20px;
+    right: auto;
+    text-align: left;
+  }
+
+  .hero-slogan {
+    top: 16px;
+    right: 20px;
+    left: auto;
+    text-align: right;
+    max-width: 60vw;
+  }
+
+  .hero-rio {
+    bottom: 16px;
+    right: 20px;
+    left: auto;
     text-align: right;
   }
 
