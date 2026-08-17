@@ -519,6 +519,11 @@ a {
   gap: 5mm;
 }
 
+.conc-col-2 {
+  justify-content: center;
+  gap: 14mm;
+}
+
 .concept {
   display: flex;
   flex-direction: column;
