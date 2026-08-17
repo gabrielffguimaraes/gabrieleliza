@@ -577,6 +577,10 @@ a {
   background: #2f3e3c;
 }
 
+.conc-photo-b {
+  height: 80mm;
+}
+
 .conc-photo img {
   display: block;
   width: 100%;
