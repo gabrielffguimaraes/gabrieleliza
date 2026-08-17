@@ -425,6 +425,7 @@ a {
 /* convite + contatos em coluna vertical + espaço para a foto */
 .intro-close {
   margin-top: auto;
+  margin-bottom: auto;
   padding-top: 8mm;
   border-top: 1px solid var(--line-dark);
 }
@@ -446,7 +447,7 @@ a {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3.5mm;
+  gap: 2mm;
 }
 
 .intro-contact-item {
