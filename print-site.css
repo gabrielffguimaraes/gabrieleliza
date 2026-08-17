@@ -463,10 +463,18 @@ a {
   color: var(--clay-deep);
 }
 
+/* coluna direita da capa: foto + texto abaixo */
+.intro-aside {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 4mm;
+}
+
 /* foto gab-20.jpg em coluna alta, ocupando a maior parte da altura abaixo da capa */
 .intro-photo {
+  flex: 1 1 auto;
   min-height: 0;
-  height: 100%;
   align-self: stretch;
   background: transparent;
   display: flex;
@@ -505,7 +513,7 @@ a {
 }
 
 .intro-avail {
-  margin-top: 4mm;
+  margin-top: 0;
   font-family: var(--sans);
   font-size: 9pt;
   line-height: 1.5;
